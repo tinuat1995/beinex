@@ -1,0 +1,24 @@
+<div class="card info-card sales-card left-border">
+    <div class="card-body">
+      <h5 class="card-title">{{data?.title}}</h5>
+
+      <div class="d-flex align-items-center">
+        <div class="col-md-2 col-3 cmn-bdr-left ">
+        <div class="card-icon rounded-circle d-flex align-items-center justify-content-center">
+                <div class="progress-circle progress-circle-13 " [ngClass]="data?.percentage>=50 ? 'over50' :''" class="p{{data?.percentage}}">
+                   <span>{{data?.percentage}}%</span>
+                   <div class="left-half-clipper">
+                      <div class="first50-bar"></div>
+                      <div class="value-bar"></div>
+                   </div>
+                </div>
+             </div>
+        </div>
+        <div class="ps-3">
+          <h6>{{data?.value}}</h6>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
